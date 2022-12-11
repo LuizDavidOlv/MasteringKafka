@@ -1,0 +1,31 @@
+Create container
+	locate yml file
+	docker compose up -d
+
+Create topic
+	.\bin\windows\kafka-topics.bat --create --topic cursos --bootstrap-server localhost:9094
+
+List topics
+	.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9094
+
+Delete topics
+	.\bin\windows\kafka-topics.bat --delete --topic cursos --bootstrap-server localhost:9094
+
+Create topic with partitions
+	.\bin\windows\kafka-topics.bat --create --topic cursos --bootstrap-server localhost:9094 --partitions 2 --replication-factor 2
+
+Alter patitions ammount
+	.\bin\windows\kafka-topics.bat --alter --topic cursos --bootstrap-server localhost:9094 --partitions 3
+
+Get info from topic
+	.\bin\windows\kafka-topics.bat --describe --topic cursos --bootstrap-server localhost:9094
+
+Publish Messages
+	.\bin\windows\kafka-console-producer.bat --topic cursos --bootstrap-server localhost:9094
+	write message that you want to publish
+
+Get Messages
+	.\bin\windows\kafka-console-consumer.bat --topic cursos --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true
+
+Get Messages from groups
+	.\bin\windows\kafka-console-consumer.bat --topic cursos --bootstrap-server localhost:9094 --from-beginning --property print.partition=true --property print.offset=true --group grupo1
