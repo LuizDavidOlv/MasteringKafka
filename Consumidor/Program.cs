@@ -27,6 +27,6 @@ while (true)
 {
     var result = consumer.Consume();
 
-    Console.WriteLine($"Mensagem: {result.Message.Key}-{result.Message.Value.Descricao}");
+    Console.WriteLine($"Mensagem: {result.Message.Value.Descricao}");
 }
 
