@@ -3,13 +3,10 @@
     "type": "record",
     "name": "Curso",
     "fields": [
-        {
-            "name": "id",
-            "type": "string"
-        },
-        {
-            "name": "descricao",
-            "type": "string"
-        }
+        {"name": "Id","type": "string"},
+        {"name": "Descricao","type": "string"}
     ]
 }
+
+//avrogen -s ..\Avros\Curso.avsc .
+//dotnet run

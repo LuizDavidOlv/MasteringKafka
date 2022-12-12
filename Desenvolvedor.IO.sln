@@ -7,7 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Produtor", "Produtor\Produt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Consumidor", "Consumidor\Consumidor.csproj", "{43D09728-4D33-4921-9513-067A709A8533}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avros", "Avros\Avros.csproj", "{A6D67A0D-FDCA-4CF6-ABA0-3550C18211E5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Avros", "Avros", "{9304EFBA-4D22-4EF1-A0C7-3D7C93F841BC}"
+	ProjectSection(SolutionItems) = preProject
+		Curso.avcs = Curso.avcs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +26,6 @@ Global
 		{43D09728-4D33-4921-9513-067A709A8533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43D09728-4D33-4921-9513-067A709A8533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43D09728-4D33-4921-9513-067A709A8533}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A6D67A0D-FDCA-4CF6-ABA0-3550C18211E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6D67A0D-FDCA-4CF6-ABA0-3550C18211E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6D67A0D-FDCA-4CF6-ABA0-3550C18211E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6D67A0D-FDCA-4CF6-ABA0-3550C18211E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
